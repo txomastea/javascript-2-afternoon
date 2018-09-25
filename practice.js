@@ -15,6 +15,11 @@
 */
 
 //Code here
+const me = {
+  name: 'thomas',
+  age: 24
+}
+//alert(me.name)
 
 
 
@@ -26,6 +31,14 @@
 */
 
 //Code here
+const favoriteThings = {
+  band: 'the weeknd',
+  food: 'pizza',
+  person: 'jo',
+  book: 'gatsby',
+  movie: 'avengers',
+  holiday: 'thanksgiving'
+}
 
 
 
@@ -34,7 +47,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'lexus';
+favoriteThings.brand = 'nike';
 
 
 /*
@@ -42,7 +56,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,6 +71,11 @@
 */
 
 //Code here
+const backPack = {}
+let item = 'firstPocket';
+backPack[item];
+backPack.firstPocket = 'chapstick';
+backPack.color = 'red';
 
 
 
@@ -64,7 +84,7 @@
 */
 
 //Code here
-
+//alert(backPack)
 
 
 /*
@@ -74,7 +94,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -98,7 +118,8 @@ var user2 = {
 
 //Code Here
 
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,7 +141,7 @@ var user2 = {
 */
 
 //Code Here
-
+const methodCollection = {}
 
 
 /*
@@ -129,7 +150,13 @@ var user2 = {
 */
 
 //Code Here
+methodCollection.alertHello = function() {
+  alert('hello')
+}
 
+methodCollection.logHello = function() {
+  console.log('hello')
+}
 
 
 /*
@@ -137,7 +164,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -149,7 +177,13 @@ var user2 = {
 
 //Code Here
 
-
+function makePerson(name, birthday, ssn) {
+  let newObj = {};
+  newObj.name = name;
+  newObj.birthday = birthday;
+  newObj.ssn = ssn;
+  return newObj;
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -160,4 +194,11 @@ var user2 = {
 
 //Code Here
 
+function makeCard(cardNumber, expirationDate, securityCode) {
+  let newCard = {};
+  newCard.cardNumber = cardNumber;
+  newCard.expirationDate = expirationDate;
+  newCard.securityCode = securityCode;
+  return newCard;
+}
 
